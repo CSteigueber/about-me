@@ -1,9 +1,35 @@
+@keyframes toggle{
+    25% { transform: translate(10px);}
+    50% {transform: translate(0px);}
+    75% { transform: translate(-10px);}
+    100% {transform: translate(0px);}
+}
+a:hover {
+    animation-name: toggle;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
 body {
     line-height: 1.2;
     font-family: cursive;
+    background-image: url(Journey-of-life1920x1080-wallpaper-wp6606659.jpg);
+    background-size: cover;
+}
+.button {
+    display: block;
+    background-color: midnightblue;
+    color: wheat;
+    width: 50%;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+.button:hover {
+    background-color: deepskyblue;
 }
 header {
     text-align: center;
+    color: midnightblue;
 }
 h1 {
     text-align: center;
@@ -24,11 +50,13 @@ main {
     margin-right: 25%;
     
 }
+main img {
+    width: 10%;
+  }
 aside {
     
     float: right;
     margin-right: 10px;
-    /*position: fixed;*/
     top: 10px;
     right: 1%;
     left: 76%;
@@ -49,9 +77,58 @@ aside img {
     margin-left: 33%;
     margin-right:33%;
 }
-main img {
-    width: 10%;
+footer{
+    background-color: whitesmoke;
+    position: fixed;
+    float: left;
+    width: 24%;
+    /*margin-left: 1%;
+    margin-top: 42%;
+    margin-bottom: 1%;*/
+    bottom: 10px;
+    margin-left: 10px;
+    
+}
+
+.home-container{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-top: 5%;
   
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+.home-item{
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  color: midnightblue;
+  font-weight: bold;
+ /* font-size: 1em;*/
+  text-align: center;
+}
+/*---------------------------------------------classes*/
+.grow:hover {
+    transform: scale(1.5);
+}
+.grow_text:hover{
+    font-size: 25px;
+    color: black;
+}
+/*----------------------------------------------ID's*/
+#contactlogo {
+    width: 100%;
+}
+#me {
+    border-radius: 20px;
 }
 #navigation{
     background-color: whitesmoke;
@@ -65,3 +142,10 @@ main img {
     line-height: 3;
     
 } 
+#contact {
+    text-align: center;
+    line-height: 2;
+}
+#main_contact {
+    width: 45%;
+}
