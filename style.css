@@ -6,9 +6,12 @@
 }
 a:hover {
     animation-name: toggle;
-    animation-duration: 500ms;
+    animation-duration: 250ms;
     animation-timing-function: linear;
-    animation-iteration-count: 1;
+    animation-iteration-count: 2;
+}
+a{
+    text-decoration: none;
 }
 body {
     line-height: 1.2;
@@ -25,7 +28,7 @@ body {
     margin: 0 auto;
 }
 .button:hover {
-    background-color: deepskyblue;
+    background-color: darkslateblue;
 }
 header {
     text-align: center;
@@ -89,7 +92,7 @@ footer{
     margin-left: 10px;
     
 }
-
+/*-----------------------------------Flexboxes*/
 .home-container{
     padding: 0;
     margin: 0;
@@ -105,7 +108,7 @@ footer{
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
 }
-.home-item{
+.home_item{
   padding: 5px;
   width: 200px;
   height: 150px;
@@ -114,6 +117,30 @@ footer{
   font-weight: bold;
  /* font-size: 1em;*/
   text-align: center;
+}
+.contact_container{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-top: 5%;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: column wrap;
+  justify-content: space-around;
+}
+.contact_item{
+  padding: 5px;
+  margin-top: 10px;
+  color: midnightblue;
+  font-weight: bold;
+  text-align: center;
+  line-height: 2;
+
 }
 /*---------------------------------------------classes*/
 .grow:hover {
@@ -148,4 +175,5 @@ footer{
 }
 #main_contact {
     width: 45%;
+    background-color: transparent;
 }
