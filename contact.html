@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="meyerweb_reset_stylesheet.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="pics/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="pics/favicon.ico">
     <title>contact</title></head>
 <body>
         <footer>
@@ -31,12 +31,12 @@
             <h2>Just send me an email:</h2>
             <a href="mailto:not.real@gmail.com" class="button">Send me an oldschool email!</a>
             <br>Or use this fancy section that doesn't operate because I didn't use php...
-            <form class="contact_container">
-                <input class="contact_item" type="text" name="firstname" placeholder="Firstname"><br>
-                <input class="contact_item" type="text" name="lastname" placeholder="Lastname"><br>
-                <input class="contact_item" type="email" name="email" placeholder="email@email.com"><br>
-                <input class="contact_item" type="text" name="message" placeholder="your message">
-                <input class="contact_item" type="submit" value="Submit">
+            <form method="post" "contact_container" action="mailto:notreal@gmail.com">
+                <input class="contact_item" id="firstname" type="text" name="firstname" placeholder="Firstname"><br>
+                <input class="contact_item" id="lastname" type="text" name="lastname" placeholder="Lastname"><br>
+                <input class="contact_item" id="email" type="email" name="email" placeholder="email@email.com"><br>
+                <input class="contact_item" id="message" type="text" name="message" placeholder="your message">
+                <button class="contact_item" onclick="mailto:not.real@gmail.com" enctype="text/plain" >Submit</button>
             </form>
         </section>
         
