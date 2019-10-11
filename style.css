@@ -1,16 +1,16 @@
-@keyframes toggle{
+@keyframes toggle {
     25% { transform: translate(10px);}
     50% {transform: translate(0px);}
     75% { transform: translate(-10px);}
     100% {transform: translate(0px);}
 }
-a:hover {
+ button:hover, a:hover {
     animation-name: toggle;
     animation-duration: 250ms;
     animation-timing-function: linear;
     animation-iteration-count: 2;
 }
-a{
+a {
     text-decoration: none;
 }
 body {
@@ -19,14 +19,13 @@ body {
     background-image: url(pics/Journey-of-life1920x1080-wallpaper-wp6606659.jpg);
     background-size: cover;
 }
-.button {
-    display: block;
+/*button {
     background-color: midnightblue;
-    color: wheat;
-    width: 50%;
+    color: whitesmoke;
     border-radius: 50px;
-    margin: 0 auto;
-}
+}*/
+
+
 .button:hover {
     background-color: darkslateblue;
 }
@@ -47,7 +46,6 @@ h3 {
     font-size: 20px;
 }
 main {
-    background-color: whitesmoke;
     width: 50%;
     margin-left: 25%;
     margin-right: 25%;
@@ -69,7 +67,7 @@ aside {
     line-height: 1.2;
 }
 aside article {
-    background-color: whitesmoke;
+   /* background-color: whitesmoke;*/
     padding-bottom: 10px;
     margin-bottom: 10px;
     border-radius: 15px;
@@ -81,10 +79,11 @@ aside img {
     margin-right:33%;
 }
 footer{
-    background-color: whitesmoke;
+   /* background-color: whitesmoke;*/
     position: fixed;
     float: left;
     width: 24%;
+    font-weight: bold;
     /*margin-left: 1%;
     margin-top: 42%;
     margin-bottom: 1%;*/
@@ -133,6 +132,7 @@ footer{
   -webkit-flex-flow: column wrap;
   justify-content: space-around;
 }
+
 .contact_item{
   padding: 5px;
   margin-top: 10px;
@@ -142,7 +142,19 @@ footer{
   line-height: 2;
 
 }
+.button {
+    display: block;
+    background-color: midnightblue;
+    color: wheat;
+    width: 50%;
+    border-radius: 50px;
+    margin: 0 auto;
+    padding: 5px;
+    margin-top: inherit;
+}
+
 /*---------------------------------------------classes*/
+
 .grow:hover {
     transform: scale(1.5);
 }
@@ -158,7 +170,6 @@ footer{
     border-radius: 20px;
 }
 #navigation{
-    background-color: whitesmoke;
     float: left;
     margin-left: 10px;
     position: fixed;
